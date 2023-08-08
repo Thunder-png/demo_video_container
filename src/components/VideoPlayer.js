@@ -1,10 +1,11 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import ReactPlayer from "react-player";
 
-function VideoPlayer({ url }) { // `url` prop'u ekledik
+function VideoPlayer({ url }, ref) { // `url` prop'u ekledik
     return (
         <div className="video-container">
             <ReactPlayer
+                ref={ref}
                 url={url} // ReactPlayer'a dinamik URL'yi geçiyoruz
                 muted={true}
                 autoPlay={true}
@@ -17,4 +18,4 @@ function VideoPlayer({ url }) { // `url` prop'u ekledik
     );
 }
 
-export default VideoPlayer;
+export default forwardRef(VideoPlayer);
