@@ -1,5 +1,5 @@
 // App.js
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 import VideoPlayer from "./components/VideoPlayer";
 import PlayButton from "./image/play-button.png";
@@ -23,7 +23,6 @@ function App() {
         </a>
 
         <div className="wrap">
-          <a href="#"></a>
         </div>
       </div>
       <VideoPlayer url="http://video-container.b-cdn.net/Intro.mp4" />
