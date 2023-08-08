@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import "./App.css";
 import VideoPlayer from "./components/VideoPlayer";
-import Intro from "./media/Intro.mp4";
 import PlayButton from "./image/play-button.png";
 
 function App() {
@@ -27,7 +26,7 @@ function App() {
           <a href="#"></a>
         </div>
       </div>
-      <VideoPlayer url={Intro} />
+      <VideoPlayer url="http://video-container.b-cdn.net/Intro.mp4" />
     </div>
   );
 }
