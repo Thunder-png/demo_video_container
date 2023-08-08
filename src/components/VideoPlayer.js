@@ -6,6 +6,7 @@ function VideoPlayer({ url }) { // `url` prop'u ekledik
         <div className="video-container">
             <ReactPlayer
                 url={url} // ReactPlayer'a dinamik URL'yi geçiyoruz
+                muted={true}
                 autoPlay={true}
                 playing={true}
                 loop={true}
